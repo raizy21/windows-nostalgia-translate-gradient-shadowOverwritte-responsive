@@ -6,11 +6,9 @@
 }
 
 body {
-  background-image: url("images/blue-ocean.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: skyblue;
+  height: 100lvh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -21,25 +19,27 @@ img {
 
 .container {
   margin-top: 2rem;
-  /* border: 1px solid red; */
+  margin-left: 2rem;
   height: 200px;
   width: 600px;
-  margin-left: 2rem;
+  background-color: #c0c0c0;
+  border: 3px solid #40403e;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .window {
-  /* background-color: #3c5690; */
-  /* border: 1px solid white; */
+  border: 1px solid white;
   height: 200px;
   width: 600px;
   border-radius: 5px;
-  /* border: 5px solid red; */
-  /* border-radius: 30px; */
 }
 
 .panel {
   background-color: #c0c0c0;
-  /* border: 10px solid orange; */
+
   margin: 0;
   padding: 0;
   height: 150px;
@@ -50,21 +50,32 @@ img {
 h1 {
   color: #ffffff;
   font-size: 1rem;
-  padding: 0.3rem 0.3rem 0.3rem 1rem;
-  background-color: #3c5690;
-  /* border: 5px solid red; */
-  border-radius: 5px 5px 0 0;
+  padding: 0.25rem 1rem;
+  background: rgb(12, 36, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 36, 104, 1) 0%,
+    rgba(171, 205, 242, 1) 100%
+  );
 }
 
-.border {
-  border: 1px solid black;
+.body {
+  padding: 1rem;
+}
+
+.text-content {
+  padding: 1rem 0;
 }
 
 .error {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   padding: 1rem 0 0 1rem;
-  /* box-shadow: 2px 2px 2px black; */
+  vertical-align: middle;
+  /* box-shadow: 0.125rem 0.125rem 0.125rem #878787; */
+  border-radius: 50%;
+  image-rendering: pixelated;
+  margin-right: 1rem;
 }
 
 p {
@@ -73,18 +84,20 @@ p {
   margin-top: 2.3rem;
   padding-right: 1.2rem;
   font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
   margin-right: 2rem;
-  height: 40px;
-  width: 90px;
+  margin-bottom: 1rem;
+
   float: right;
-  border: 2px solid black;
   background-color: #c0c0c0;
-  color: black;
+  font-weight: 500;
+
   box-shadow: 3px 3px 0 black;
   font-size: 1.2rem;
-  border: 2px solid white;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid #40403e;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
 }
