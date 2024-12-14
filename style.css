@@ -7,7 +7,7 @@
 
 body {
   background-color: skyblue;
-  height: 100lvh;
+  height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -100,4 +100,21 @@ button {
   border: 2px solid #40403e;
   border-top: 2px solid white;
   border-left: 2px solid white;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  html {
+    /* font-size: 24px; */
+  }
+  .window {
+    min-width: 600px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  html {
+    /* font-size: 32px; */
+  }
+  .window {
+    min-width: 800px;
+  }
 }
